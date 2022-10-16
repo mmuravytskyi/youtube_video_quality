@@ -1,1 +1,8 @@
-# youtube_video_quality
+# Implementation of Network Distortions Simulating Quality Changes Observed by YouTube Users
+### Abstract:
+Dynamic Adaptive Streaming over HTTP has become the most widely used technology for multimedia streaming. It is a highly flexible and scalable approach accepted by industry giants like Netflix and YouTube. Nevertheless, this technology is imperfect and has drawbacks related to infrastructure and end-user experience. Whereas constantly growing demand for multimedia streaming poses certain difficulties onto network infrastructure, end-users expect stable high quality and low delays. For streaming providers serving many users globally, providing good Quality of Experience (QoE) is no trifling matter. They are interested in mediating a perfect balance between end-user QoE and operational costs.
+
+For this work, two main goals were set i.e. to better understand streaming flow in the YouTube application and to implement and analyze how network distortions influence the selection of video quality. As for the first goal, the YouTube streaming process has been examined starting from fetching an index file up to selecting chunks of what quality to request next. An example of the streaming process has been described in great detail including burst, throttling, and drop phases.
+As for the second goal, a networking tool was used to simulate different bandwidths. It allowed creating a distribution of bandwidth for the specific quality level. Given the distribution, it is possible to estimate the quality level based on bandwidth measurements. To ensure valid results and minimize the impact that compression may have, all of the tests were repeated over the dataset of 120 YouTube videos.
+
+The results of this work will be used as a part of a bigger project named “Towards Better Understanding of Factors Influencing QoE” that will study a correlation between video quality and perceived quality.
